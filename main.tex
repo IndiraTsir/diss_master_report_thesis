@@ -1,0 +1,56 @@
+\documentclass[sigconf, screen, review=false, nonacm]{acmart}
+
+% Optional ACM class if not in your distribution
+% \usepackage{acmart}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\title{Your Thesis Title Here}
+\author{Your Name}
+\affiliation{
+  \institution{Your University}
+  \city{City}
+  \country{Country}
+}
+\email{youremail@university.edu}
+
+\begin{abstract}
+This is the abstract of your thesis. It should summarize the main points of your work.
+\end{abstract}
+
+\keywords{LaTeX, ACM, Thesis, One Column, Template}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Write your introduction here. Cite references like this~\cite{lamport1994latex}.
+
+\section{Background}
+Background and literature review content goes here.
+
+\section{Methodology}
+Explain how you approached your problem.
+
+\section{Results}
+Discuss the outcomes, supported by figures and tables.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{images/figure1.png}
+  \caption{An example figure}
+  \label{fig:example}
+\end{figure}
+
+\section{Conclusion}
+Summarize and present future work.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
