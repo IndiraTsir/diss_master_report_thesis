@@ -57,76 +57,61 @@ The tiger mosquito (\textit{Aedes albopictus}) is an invasive species known for 
 
 Traditional surveillance methods have proven valuable but are constrained by limited data, resources, and the need for large-scale, real-time monitoring. Recent advances in crowdsensing and citizen science offer a promising solution to these challenges by engaging the public in data collection efforts \cite{Sousa-2022}.
 
-\section{Significance}
 The proliferation of \textit{Aedes albopictus} in Lyon poses serious health and socioeconomic threats. 
 Individual health risks arise from increased exposure to mosquito-borne diseases, with cases such as the dengue infection reported in Lyon’s third arrondissement in August 2024 triggering immediate vector control responses \cite{dengue_lyon}. Furthermore, the aggressive daytime biting behavior of this mosquito reduces outdoor activities, diminishing personal well-being and comfort.
 
 At the community level, the economic and social impact is substantial. The disruption of outdoor commerce, tourism, and public spaces affects local businesses and urban lifestyles \cite{haderer:hal-00783873}. Schools, parks, and neighborhoods experience reduced livability, necessitating community-driven responses to mosquito control.
 On a broader scale, the increasing presence of 	extit{Aedes albopictus} in France poses nationwide public health risks, necessitating the development of scalable intervention models that could serve as templates for other regions facing similar threats \cite{article}.
 
-\section{Proposed Solution}
-To tackle the challenges posed by \textit{Aedes albopictus}, we propose a crowdsensing approach for mosquito surveillance, leveraging mobile apps and citizen participation\cite{SHANG2023101788}\cite{ROLPH2017210}. Building on successful initiatives such as Spain's Mosquito-Alert app, this research will:
+
+\section{Ideas to check}
 
 \begin{itemize}
-    \item Engage biology students from Université Claude Bernard Lyon 1 in water sample collection. Utilize mobile apps to guide sample collection and reporting. Provide educational resources to enhance public awareness of mosquito-borne disease prevention.
-    \item Establish validation mechanisms to ensure the reliability of citizen-reported data and develop a comprehensive dataset on mosquito breeding sites and population dynamics.
-    \item Apply AI-driven models to predict disease transmission risks.
+    \item 1) Intro - objective - challenges - project importance 
+    \item 2) Background and related work / State of the art about variables affecting mosquitoes - penelope study and something else??? How they tried to find those things... Our approach is NEW AND WAS NEVER DONE (allegedly and to the best of myyyy knowledge) But talk about what are OTUs, how treated what "read" means VS abiotic. How they have familys and genus and etc etc TOOO MUCH INFO but at the same time not enough. A unique problem (me know nothing, will try to find things with carefull orientation from them, without disclosing the results they have that might have influenced their workflow or their hypotheses. UNIQUEEEE! MUCH WOW!! BE IMPRESSED!!) They do RRRRRR! They have all the code to basically cluster it in a biological manner by family etc etc. But I do it with python, no family influence that will be perceived by my algorithms, every feature will be treated as completely different. Is it good or bad? Don't know, since no previous data on that (unique study remeber!). So how to bundle biotic things with abiotic things and just analyze them all? Well that's our methodology. 
+    \item 3) Methodology - EDA, then ML, then go simple analysis with descriptive stats: similar, Dissimilar? Processing, the NA, the temps the things to filter and why. Then test expe. Then test Expe Penelope?? 
+    \item 4) Evaluation and results : will see
+    \item 5) Conclusion
+    \item 
 \end{itemize}
 
 
-\section{Research Objectives}
+\section{Plan Objectives INTRO}
 \begin{enumerate}
-    \item Develop a large-scale citizen science-based mosquito surveillance program in Lyon.
-    \item Create an open-access dataset on \textit{Aedes albopictus} distribution.
-    \item Leverage AI and graph-based analytics to model mosquito population dynamics.
-    \item Predict potential disease transmission risks using geospatial and environmental data.
+    \item Tiger mosquito - what is it, why dangerous (vector and diseases) and the impact on general health and the life of people (no can go outside without some spray etc etc)
+    \item Why we do this research - ANR SERIOUS with Claire and Axelle - interdisciplinary project so Remy have joined
+    \item Me, charged with this project as a way to do what exactly? (data analytics, data science, networks etc etc etc)
+    \item The data that we have : collected samples from sewers: 6 of them and 10 times
+    \item Experiments that have been also conducted by Axelle on some samples (gites)
+    \item What we try to find here : why the hell mosquitoes love some places and not the others and what does that mean for us
+    \item We try to understand data, separate abiotics, bacteries, fungis and analyse it
+    \item See how similar or dissimilar they are
+    \item See if ML or AI can find something
+    \item Compare with dumb simple methods like desriptive statistics etc
+    \item Gain more familiarity with the dataset, understand better with the "experts" what that may or may not mean (frustrations and challenges here)
+    \item What have been found so far
+\end{enumerate}
+
+\section{HYPOTHESES}
+\begin{enumerate}
+    \item similar
+    \item not similar
+    \item test
+    \item networks??
+    \item give tools to understand it better with apps like PBI??? (sad)
+    \item Compare with DATA PENELOPE (SHOULD DO IT OR IF NO FINDINGS ME DONE!!!!!)
 \end{enumerate}
 
 
+
 \section{Challenges and Mitigation}
-\textbf{Data Privacy:} Implement anonymization protocols to protect participant identity.  
-\textbf{Data Quality:} Validate crowdsourced data through cross-referencing and expert review.  
-\textbf{Incentivization:} Encourage consistent participation through gamification and educational campaigns.
+\textbf{Data Size:} tiny.  
+\textbf{Data Quality:} errr.  
+\textbf{Data Understanding:} me problems.
 
 
 \section{Impact}
-This research addresses the urgent need for innovative mosquito control strategies. By using citizen science and advanced data analysis techniques, the project has the potential to reduce disease transmission risks in Lyon and globally. The resulting open-access dataset will enable researchers worldwide to combat mosquito-borne diseases effectively.
-
-\section{Literature Review: Crowdsensing for Aedes albopictus Control}
-
-\subsection{Paper Collection Methodology}
-To conduct this literature review, we employed a systematic approach to gather relevant research on platforms chosen for their credibility and reputation, such as: PubMed Central (PMC), ScienceDirect and Google Scholar.
-
-We then selected articles with the following keywords:
-\begin{itemize}
-\item "Aedes albopictus", "crowdsensing", "citizen science vector monitoring", "mobile app mosquito reporting", "AI mosquito prediction"
-\end{itemize}
-
-Our exclusion criteria were non-English publications and theoretical models without field validation.
-
-Our screening process was done by an initial filtering of titles and abstracts for relevance and then a full-text review of selected papers. 
-
-\subsection{Crowdsensing: A Paradigm Shift in Surveillance}
-
-Crowdsensing leverages distributed communities equipped with mobile devices to collect real-time, spatially granular data. In public health, it transforms citizens into active contributors through apps that report environmental observations (e.g., mosquito breeding sites) or biological samples (e.g., water containers). Spain’s Mosquito-Alert app exemplifies this approach, enabling rapid detection of invasive mosquitoes across 32 provinces—far exceeding traditional coverage.
-
-\textbf But there's some critical challenges in crowdsensing initiatives:
-
-\begin{itemize}
-\item Such as participant recruitment and retention: limited public awareness and trust in data usage reduce initial participation.
-In addition, Spain's Mosquito-Alert saw a decline in engagement after the first year, highlighting the requirement for gamification to sustain involvement. Students and tech-literate groups dominate participation, skewing data toward urban areas which can represent a big demographic bias.\end{itemize}
-
-
-\begin{itemize}
-\item The second challenge is the data quality assurance.
-Untrained volunteers in Spain misclassified \textit{Culex} mosquitoes as \textit{Aedes} in \(23\%\) of cases. Improper water sample storage by citizens can degrade DNA viability for species confirmation. Cross-referencing crowdsourced reports with expert reviews adds operational complexity.\end{itemize}
-
-
-\begin{itemize}
-\item The final challenge is to address the gaps in the existing studies.
-Most research (e.g., mass-trapping trials in France) focuses on mosquito density reduction rather than direct disease transmission metrics. Few initiatives maintain multi-year datasets to assess intervention sustainability. Current models rarely integrate real-time climate projections, despite \textit{Aedes albopictus} range shifts.
-Anonymization protocols in Spain’s app reduced spatial precision, hindering micro-targeted interventions.\end{itemize}
-
+This research addresses the urgent need for innovative mosquito control strategies.
 
 
 \subsection{Advancements in the Proposed Lyon Study}
